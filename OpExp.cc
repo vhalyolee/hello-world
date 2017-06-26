@@ -17,7 +17,16 @@ public:
     // conversion operator that return reverse string
  ReverseStr   operator - (ReverseStr const &input)
  {
-        return reverse(input.begin(),input.end());
+         return ReverseStr(reverse((input.oristr).begin(),(input.oristr).end()));
+     
+     
+     // or we could so
+    // string updatedstr=input.oristr;
+    // int length = (input.oristr).length();
+    // for (int i=0;i<length;i++){
+    // updatedstr[length-i] = input.oristr[i];
+    // }
+    // return ReverseStr(updatedstr);
  }
 
  
